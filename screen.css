@@ -63,7 +63,7 @@ a {
   background-color: #4876FF;
   width: 500px;
   height: 90%;
-  
+  margin: 50px;
 }
 h1 {
 	font-size: 76px;
@@ -86,5 +86,5 @@ p {
 	margin-top: 10px;
 	color: ghostwhite;
 	font-style: bold;
-	letter-spacing: 2ems;
+	letter-spacing: 2 ems;
 }
