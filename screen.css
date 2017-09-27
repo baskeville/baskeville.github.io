@@ -63,12 +63,13 @@ a {
   background-color: #4876FF;
   width: 90%;
   height: 90%;
-  margin: 50px;
+  
 }
 h1 {
 	font-size: 76px;
 	color: ghostwhite;
 	margin-left:50px;
+	margin-bottom: 15px;
 	font-style: bold;
 	font-family: 'Libre Barcode 39 Text', cursive;
 }
@@ -86,4 +87,5 @@ p {
 	margin-top: 10px;
 	color: ghostwhite;
 	font-style: bold;
+	letter-spacing: 2ems;
 }
