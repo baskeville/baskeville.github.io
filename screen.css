@@ -48,7 +48,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-family: sans-serif;
   color: ghostwhite;
-  background-color: #4D90FEE; 
+  background-color: #4D90FE; 
   }
 
 a {
@@ -74,9 +74,8 @@ h1 {
 
 h2 {
 	font-family: verdana;
-	font-size: 56;
+	font-size: 56px;
 	color: ghostwhite;
-	margin-left:50px;
 	font-style: bold;
 	font-family: 'Libre Barcode 39 Text', cursive;
 }
@@ -86,5 +85,4 @@ p {
 	margin-top: 10px;
 	color: ghostwhite;
 	font-style: bold;
-	margin-left:50px;
 }
