@@ -48,7 +48,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-family: sans-serif;
   color: ghostwhite;
-  background-color: #4D90FE; 
+  background-color: #4876FF; 
   }
 
 a {
@@ -60,7 +60,7 @@ a {
   padding: 50px; 
   border: 2px thick offwhite;
   border-radius: 15px;}
-  background-color: #4D90FE;
+  background-color: #4876FF
   width: 90%;
   
 h1 {
