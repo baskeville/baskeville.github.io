@@ -48,7 +48,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font-family: sans-serif;
   color: ghostwhite;
-  background-color: electricblue;
+  background-color: #4D90FEE; 
   }
 
 a {
@@ -60,7 +60,7 @@ a {
   padding: 50px; 
   border: 2px offwhite;
   border-radius: 15px;}
-  background-color: electricblue;
+  background-color: #4D90FE;
   
 h1 {
 	font-family: verdana;
