@@ -58,10 +58,12 @@ a {
 
 #main {
   padding: 50px; 
-  border: 2px solid #fbf8eb;
+  border: 2px solid ghostwhite;
   border-radius: 15px;}
   background-color: #4876FF
   width: 90%;
+  height: 90%;
+  margin: 50px;
   
 h1 {
 	font-size: 76px;
