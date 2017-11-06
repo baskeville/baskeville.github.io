@@ -38,7 +38,7 @@ def main():
                 user = user.lower();
                 while (user != "rock" and user != "paper" and user != "scissors"):
                         print(user);
-                        user= input("That choice is not valid. Enter your choice (rock/paper/scissors): ");
+                        user= input("You may only enter rock, paper, or scissors as an option: ");
                         user = user.lower();
                 comp = random.randint(0,2);
                 if (comp == 0):
