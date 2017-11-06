@@ -29,6 +29,51 @@
 		<p>App Inventor</p><br>
 		<a href="https://www.screencast.com/t/SbfrJ31qKk">Magic Eight Ball</a><br><br>
 		<br><br><p>Week 4</p><br><br>
+		<p>Rock, Paper, Scissors</p><br>
+		<textarea rows="30" cols="90">
+		import random;
+def main():
+        while True:
+                user = input("Enter your choice (rock, paper, or scissors?): ");
+                user = user.lower();
+                while (user != "rock" and user != "paper" and user != "scissors"):
+                        print(user);
+                        user= input("That choice is not valid. Enter your choice (rock/paper/scissors): ");
+                        user = user.lower();
+                comp = random.randint(0,2);
+                if (comp == 0):
+                        compC = "rock";
+                elif (comp == 1):
+                        compC = "paper";
+                elif (comp == 2):
+                        compC = "scissors";
+                else:
+                        compC = "Error, something went wrong.";
+                if (user == compC):
+                        print("Draw!");
+                elif (user== "rock"):
+                        if (compC == "paper"):
+                                print("Computer wins!");
+                        else:
+                                print("You win!");
+                elif (user == "paper"):
+                        if (compC == "rock"):
+                                print("You win!");
+                        else:
+                                print("Computer wins!")
+                elif (user == "scissors"):
+                        if (compC == "rock"):
+                                print("Computer wins!");
+                        else:
+                                print("You win!");
+
+                print("Your choice: " + user + "\nComputer choice: " + compC + "\nThank you for playing!");
+                restart = input("Enter 'yes' to play again\n");
+                if not restart == 'yes':
+                        break;
+main()
+
+		</textarea>
 		<br><br><p>Week 5</p><br><br>
     </div>
 		
