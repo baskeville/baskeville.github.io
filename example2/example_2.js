@@ -11,3 +11,5 @@ else {
     }
     ellipse(mouseX, mouseY, 80, 80);
 }
+setup();
+draw();
