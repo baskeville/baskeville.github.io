@@ -73,11 +73,78 @@ def main():
                         break;
 main()
 		
+		</textarea rows"30" cols="90">
+import random;
+def main():
+    while True:
+        colors = ['red', 'green', 'white', 'blue']
+        answer = []
+        i=0
+        
+        while i<4:
+           color = random.randint(0,3)
+           answer.append(colors[color])
+           i=i+1
+        #print('Answer: ', answer)
+
+        fullMatches=0
+        guessNum=1
+        while (fullMatches<4):
+
+            fullMatches = 0
+            partialMatches = 0
+            answerCopy = answer[:]
+            guess = []
+            print ('Guess:', guessNum)
+
+            i=0		
+            while i<len(answer):
+              print ('Enter one color from: ')
+              print (colors)
+              color = input()
+              guess.append(color)
+              i=i+1;
+
+            i=0;
+            while i<len(guess):
+              if guess[i] == answerCopy[i]:
+                fullMatches = fullMatches+ 1
+                answerCopy[i] = 'X'
+                guess[i]='Y'
+              i=i+1
+
+            i=0
+            while i<len(guess):
+              j=0
+              while j<len(answerCopy):
+                if guess[i] == answerCopy[j]:
+                  partialMatches = partialMatches+ 1
+                  answerCopy[j] = 'X'
+                  guess[i]='Y'
+                j=j+1
+              i=i+1
+            print('\nFull matches: ')
+            print(fullMatches)
+            print('Partial matches: ')
+            print(partialMatches)
+            print('\n')
+            if fullMatches == 4:
+                print ('You guessed it in ')
+                print (guessNum)
+                print ('tries!\n')
+            guessNum=guessNum+1
+                       
+        restart = input("Enter 'yes' to play again\n")
+        if not restart == 'yes':
+                break
+main()
+
 		</textarea>
 		<p>2) Sketches</p><br><br>
 		<a href="empty-example/index.html">Sketch 1</a><br><br>
 		<a href="example2/index.html">Sketch 2</a>
 		<br><br><br><p>Week 5</p><br><br>
+		<textarea col>
     </div>
 		
 		
