@@ -45,53 +45,6 @@
 		<textarea rows="30" cols="90">
 import random;
 def main():
-        while True:
-                user = input("Enter your choice (rock, paper, or scissors?): ");
-                user = user.lower();
-                while (user != "rock" and user != "paper" and user != "scissors"):
-                        print(user);
-                        user= input("You may only enter rock, paper, or scissors as an option: ");
-                        user = user.lower();
-                comp = random.randint(0,2);
-                if (comp == 0):
-                        compC = "rock";
-                elif (comp == 1):
-                        compC = "paper";
-                elif (comp == 2):
-                        compC = "scissors";
-                else:
-                        compC = "Error, something went wrong.";
-                if (user == compC):
-                        print("Draw!");
-                elif (user== "rock"):
-                        if (compC == "paper"):
-                                print("Computer wins!");
-                        else:
-                                print("You win!");
-                elif (user == "paper"):
-                        if (compC == "rock"):
-                                print("You win!");
-                        else:
-                                print("Computer wins!")
-                elif (user == "scissors"):
-                        if (compC == "rock"):
-                                print("Computer wins!");
-                        else:
-                                print("You win!");
-
-                print("Your choice: " + user + "\nComputer choice: " + compC + "\nThank you for playing!");
-                restart = input("Enter 'yes' to play again\n");
-                if not restart == 'yes':
-                        break;
-main()
-		
-		</textarea>
-
-		<br><br><br><p>Week 5</p><br><br>
-		<p>1)MasterMind</p><br><br>
-		<textarea rows="30" cols="90">
-import random;
-def main():
     while True:
         colors = ['red', 'green', 'white', 'blue']
         answer = []
@@ -106,7 +59,6 @@ def main():
         fullMatches=0
         guessNum=1
         while (fullMatches<4):
-
             fullMatches = 0
             partialMatches = 0
             answerCopy = answer[:]
@@ -118,10 +70,21 @@ def main():
               print ('Enter one color from: ')
               print (colors)
               color = input()
-              guess.append(color)
-              i=i+1;
-
-            i=0;
+              k=0
+              valid=True
+              while k<len(colors):
+                  if color not in colors:
+                      valid = False
+                      print("You must choose a valid color!")
+                      
+                      break
+                  k=k+1
+              if valid:
+                  guess.append(color)
+                  i=i+1
+              else: i=i
+              
+            i=0
             while i<len(guess):
               if guess[i] == answerCopy[i]:
                 fullMatches = fullMatches+ 1
@@ -154,6 +117,7 @@ def main():
         if not restart == 'yes':
                 break
 main()
+
 
 		</textarea>
 		<br><br>
