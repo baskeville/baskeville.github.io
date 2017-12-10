@@ -222,6 +222,50 @@ main()
 		<p>Big Ball of Mud</p><br><br>
 		<p>Hangman</p><br><br>
 		<textarea rows="30" cols="90">
+import random;
+def main():
+    while True:
+        words = ['batter','perfume','hangman','Tennessee','billboard','erase','treasure','panicotta','tent','arugula','spider','swirl','orphan','candy','office']
+        allowedGuesses = 10
+        random.shuffle(words)
+        answer=list(words[1])
+        display = ["_"] * len(answer)
+        rightGuesses = 0
+        answerLength = str(len(answer))
+        print('\n')
+        print('Answer is ' + answerLength + " letters long.")
+        for i in range(len(display)):
+            display[i] = "_"
+        count = 0
+        guess = ""
+        while guess !="quit" and rightGuesses !=len(answer):
+            print('_________________________________')
+            print('\nYou have '+ str(allowedGuesses) +' guesses left.\n')
+            guess = input("\nGuess one letter.\n")
+            while count < len(answer):
+                if answer[count] == guess:
+                    display[count] = guess
+                    rightGuesses += 1
+                count += 1
+            allowedGuesses -= 1
+            count = 0
+            print(' '.join(display))
+        if rightGuesses == len(answer):
+            print("\nYou win!")
+            restart = input("\nEnter 'yes' to play again\n");
+            if not restart == 'yes':
+                break;
+
+        if allowedGuesses == 0:
+            print("You're out of guess! You lose!")
+            restart = input("Enter 'yes' to play again\n");
+            if not restart == 'yes':
+                break;
+
+        
+
+        
+main()
 		
 		</textarea>
 		
