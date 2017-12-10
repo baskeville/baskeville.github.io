@@ -250,7 +250,34 @@ main()
 		
 		<p>Week 10</p><br><br>
 		<p>Python Base Converter</p><br><br>
-		
+		<text area col="90" row="30">
+def main():
+    while True:
+        num = input("Enter a base 10 decimal number.\n")
+        base = input("Please enter a base to convert to.\n")
+        num = int(num)
+        base = int(base)
+        def baseN(num, base):
+            answer, modstring = "", ""
+            current = num
+            if not base < 37:
+                raise ValueError("Choose a base between 2 and 36, yo.")
+            if not num:
+                return '0'
+            while current:
+                mod = current % base
+                current = current // base
+                answer = chr(48 + mod + 7*(mod >= 10)) + answer
+            print("Answer: " + answer)  
+        baseN(num, base)
+          
+        restart = input("Enter 'yes' to ask again\n");
+        if not restart == 'yes':
+            break;
+
+main()
+
+		</textarea>
 		<p>Week 11</p><br><br>
 		<p>Robot Treasure Hunt</p><br><br>
 		<a href="https://docs.google.com/document/d/1Qf4ckxrEmjoOH8I74X6swIfBXKh2302yPm3Vz_EX3MY/edit">Fall Term Rubric</a>
